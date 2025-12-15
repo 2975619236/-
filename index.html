@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>响应式单页示例</title>
+    <title>洪加龙组 - 官方页面</title>
     <!-- 引入 Tailwind CSS 用于快速实现响应式样式 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- 引入 Font Awesome 图标 -->
@@ -37,6 +37,9 @@
             .content-section {
                 @apply max-w-4xl mx-auto px-4 py-8 md:py-16;
             }
+            .member-card {
+                @apply bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-6 border border-gray-100 hover:border-primary/20;
+            }
         }
     </style>
 </head>
@@ -48,8 +51,8 @@
                 <!-- 品牌 Logo -->
                 <div class="flex items-center">
                     <a href="#" class="flex items-center space-x-2">
-                        <i class="fa-solid fa-rocket text-primary text-2xl"></i>
-                        <span class="text-xl font-bold text-primary">响应式单页</span>
+                        <i class="fa-solid fa-users text-primary text-2xl"></i>
+                        <span class="text-xl font-bold text-primary">洪加龙组</span>
                     </a>
                 </div>
 
@@ -57,6 +60,7 @@
                 <div class="hidden md:flex items-center space-x-1">
                     <a href="#home" class="nav-link font-medium">首页</a>
                     <a href="#about" class="nav-link font-medium">关于我们</a>
+                    <a href="#team" class="nav-link font-medium">组员分工</a>
                     <a href="#services" class="nav-link font-medium">服务</a>
                     <a href="#contact" class="nav-link font-medium">联系我们</a>
                     <a href="#" class="ml-4 px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition-all duration-300">
@@ -78,6 +82,7 @@
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="#home" class="mobile-nav-link font-medium">首页</a>
                 <a href="#about" class="mobile-nav-link font-medium">关于我们</a>
+                <a href="#team" class="mobile-nav-link font-medium">组员分工</a>
                 <a href="#services" class="mobile-nav-link font-medium">服务</a>
                 <a href="#contact" class="mobile-nav-link font-medium">联系我们</a>
             </div>
@@ -95,17 +100,17 @@
         <section id="home" class="bg-gradient-to-b from-primary/5 to-white py-16 md:py-24">
             <div class="content-section">
                 <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold text-dark mb-6 leading-tight">
-                    打造极致的<span class="text-primary">响应式</span>网页体验
+                    洪加龙组 <span class="text-primary">专业团队</span> 竭诚为您服务
                 </h1>
                 <p class="text-lg md:text-xl text-secondary mb-8 max-w-3xl leading-relaxed">
-                    我们专注于创建适配所有设备的现代化网页，无论是手机、平板还是桌面电脑，都能提供流畅一致的用户体验。
+                    洪加龙组专注于提供高品质的专业服务，凭借丰富的经验和专业的能力，为客户解决各类需求，创造最大价值。
                 </p>
                 <div class="flex flex-wrap gap-4">
                     <a href="#services" class="px-6 py-3 bg-primary text-white rounded-md hover:bg-primary/90 transition-all duration-300 shadow-md hover:shadow-lg">
                         了解我们的服务
                     </a>
-                    <a href="#about" class="px-6 py-3 bg-white text-primary border border-primary rounded-md hover:bg-primary/5 transition-all duration-300">
-                        关于我们
+                    <a href="#team" class="px-6 py-3 bg-white text-primary border border-primary rounded-md hover:bg-primary/5 transition-all duration-300">
+                        查看组员分工
                     </a>
                 </div>
             </div>
@@ -114,41 +119,41 @@
         <!-- 关于我们部分 -->
         <section id="about" class="py-16 md:py-24 bg-white">
             <div class="content-section">
-                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-8">关于我们</h2>
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-8">关于洪加龙组</h2>
                 <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
                         <p class="text-secondary mb-4 leading-relaxed">
-                            我们是一家专注于前端开发的专业团队，拥有多年的响应式网页设计与开发经验。我们深知在移动优先的时代，网页的适配性直接影响用户体验和业务转化。
+                            洪加龙组是一支由行业资深人士组成的专业团队，拥有多年的实战经验和丰富的项目积累。我们始终秉持专业、负责、创新的理念，为客户提供全方位的解决方案。
                         </p>
                         <p class="text-secondary mb-4 leading-relaxed">
-                            我们的核心价值观是：简洁、高效、适配、创新。每一个项目我们都精益求精，确保代码的可维护性和性能优化，同时兼顾视觉设计和用户体验。
+                            自成立以来，洪加龙组已为众多客户提供了优质的服务，涵盖多个领域和行业。我们注重团队协作和技术创新，确保每一个项目都能达到客户的期望和要求。
                         </p>
                         <p class="text-secondary leading-relaxed">
-                            从原型设计到最终上线，我们提供一站式的前端解决方案，帮助企业和个人打造符合现代标准的响应式网站。
+                            洪加龙组的核心目标是：以客户需求为导向，以专业能力为基础，以优质服务为保障，助力客户实现发展目标。
                         </p>
                     </div>
                     <div class="bg-gray-100 rounded-xl p-6 shadow-sm">
-                        <h3 class="font-semibold text-lg mb-4 text-dark">我们的优势</h3>
+                        <h3 class="font-semibold text-lg mb-4 text-dark">洪加龙组 核心优势</h3>
                         <ul class="space-y-3">
                             <li class="flex items-start">
                                 <i class="fa-solid fa-check-circle text-primary mt-1 mr-3"></i>
-                                <span class="text-secondary">基于最新的前端技术栈开发</span>
+                                <span class="text-secondary">专业的团队成员，丰富的行业经验</span>
                             </li>
                             <li class="flex items-start">
                                 <i class="fa-solid fa-check-circle text-primary mt-1 mr-3"></i>
-                                <span class="text-secondary">100% 响应式设计，适配所有设备</span>
+                                <span class="text-secondary">定制化解决方案，满足个性化需求</span>
                             </li>
                             <li class="flex items-start">
                                 <i class="fa-solid fa-check-circle text-primary mt-1 mr-3"></i>
-                                <span class="text-secondary">性能优化，加载速度快</span>
+                                <span class="text-secondary">高效的执行效率，严格的质量把控</span>
                             </li>
                             <li class="flex items-start">
                                 <i class="fa-solid fa-check-circle text-primary mt-1 mr-3"></i>
-                                <span class="text-secondary">符合 WCAG 无障碍标准</span>
+                                <span class="text-secondary">完善的售后服务，长期的合作关系</span>
                             </li>
                             <li class="flex items-start">
                                 <i class="fa-solid fa-check-circle text-primary mt-1 mr-3"></i>
-                                <span class="text-secondary">SEO 友好的代码结构</span>
+                                <span class="text-secondary">持续的学习创新，紧跟行业发展趋势</span>
                             </li>
                         </ul>
                     </div>
@@ -156,56 +161,158 @@
             </div>
         </section>
 
-        <!-- 服务部分 -->
-        <section id="services" class="py-16 md:py-24 bg-gray-50">
+        <!-- 新增：组员分工板块 -->
+        <section id="team" class="py-16 md:py-24 bg-gray-50">
             <div class="content-section">
-                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-2 text-center">我们的服务</h2>
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-2 text-center">洪加龙组 组员分工</h2>
                 <p class="text-secondary text-center mb-12 max-w-2xl mx-auto">
-                    提供全方位的前端开发服务，满足您的各种业务需求
+                    团队成员各有所长，分工明确，高效协作，共同为客户创造价值
+                </p>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- 组员1 -->
+                    <div class="member-card">
+                        <div class="flex flex-col items-center text-center mb-4">
+                            <div class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-user-tie text-primary text-3xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-dark">洪加龙</h3>
+                            <p class="text-primary font-medium text-sm">团队负责人 / 项目总策划</p>
+                        </div>
+                        <div class="text-secondary text-sm">
+                            <p class="mb-2"><strong>职责：</strong>统筹团队整体运营，制定项目战略规划，对接核心客户，把控项目整体方向和质量。</p>
+                            <p><strong>专长：</strong>项目管理、战略规划、客户关系维护、团队协调。</p>
+                        </div>
+                    </div>
+
+                    <!-- 组员2 -->
+                    <div class="member-card">
+                        <div class="flex flex-col items-center text-center mb-4">
+                            <div class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-laptop-code text-primary text-3xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-dark">张明</h3>
+                            <p class="text-primary font-medium text-sm">技术负责人 / 方案执行</p>
+                        </div>
+                        <div class="text-secondary text-sm">
+                            <p class="mb-2"><strong>职责：</strong>负责技术方案制定，项目落地执行，解决技术难题，确保项目技术层面的可行性和稳定性。</p>
+                            <p><strong>专长：</strong>技术研发、方案落地、问题排查、流程优化。</p>
+                        </div>
+                    </div>
+
+                    <!-- 组员3 -->
+                    <div class="member-card">
+                        <div class="flex flex-col items-center text-center mb-4">
+                            <div class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-chart-pie text-primary text-3xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-dark">李娜</h3>
+                            <p class="text-primary font-medium text-sm">市场分析 / 数据运营</p>
+                        </div>
+                        <div class="text-secondary text-sm">
+                            <p class="mb-2"><strong>职责：</strong>调研市场趋势，分析行业数据，制定市场策略，跟踪项目效果并提供数据支撑。</p>
+                            <p><strong>专长：</strong>市场调研、数据分析、趋势预测、效果评估。</p>
+                        </div>
+                    </div>
+
+                    <!-- 组员4 -->
+                    <div class="member-card">
+                        <div class="flex flex-col items-center text-center mb-4">
+                            <div class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-handshake text-primary text-3xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-dark">王强</h3>
+                            <p class="text-primary font-medium text-sm">客户对接 / 商务洽谈</p>
+                        </div>
+                        <div class="text-secondary text-sm">
+                            <p class="mb-2"><strong>职责：</strong>对接客户需求，进行商务洽谈，维护客户关系，跟进项目进度并及时反馈沟通。</p>
+                            <p><strong>专长：</strong>客户沟通、商务谈判、需求梳理、关系维护。</p>
+                        </div>
+                    </div>
+
+                    <!-- 组员5 -->
+                    <div class="member-card">
+                        <div class="flex flex-col items-center text-center mb-4">
+                            <div class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-pen-nib text-primary text-3xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-dark">刘芳</h3>
+                            <p class="text-primary font-medium text-sm">设计策划 / 文案创作</p>
+                        </div>
+                        <div class="text-secondary text-sm">
+                            <p class="mb-2"><strong>职责：</strong>负责项目视觉设计，文案创作，策划活动方案，提升项目的整体呈现效果。</p>
+                            <p><strong>专长：</strong>视觉设计、文案撰写、活动策划、品牌包装。</p>
+                        </div>
+                    </div>
+
+                    <!-- 组员6 -->
+                    <div class="member-card">
+                        <div class="flex flex-col items-center text-center mb-4">
+                            <div class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-headset text-primary text-3xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-dark">陈杰</h3>
+                            <p class="text-primary font-medium text-sm">售后支持 / 运维保障</p>
+                        </div>
+                        <div class="text-secondary text-sm">
+                            <p class="mb-2"><strong>职责：</strong>提供项目售后技术支持，处理客户反馈问题，保障项目长期稳定运行。</p>
+                            <p><strong>专长：</strong>售后维护、问题处理、技术支持、客户服务。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 服务部分 -->
+        <section id="services" class="py-16 md:py-24 bg-white">
+            <div class="content-section">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-2 text-center">洪加龙组 服务内容</h2>
+                <p class="text-secondary text-center mb-12 max-w-2xl mx-auto">
+                    洪加龙组提供全方位的专业服务，满足您的各种业务需求
                 </p>
 
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- 服务卡片 1 -->
                     <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-6">
                         <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                            <i class="fa-solid fa-code text-primary text-xl"></i>
+                            <i class="fa-solid fa-handshake-angle text-primary text-xl"></i>
                         </div>
-                        <h3 class="text-lg font-semibold mb-3 text-dark">响应式网页开发</h3>
+                        <h3 class="text-lg font-semibold mb-3 text-dark">项目咨询服务</h3>
                         <p class="text-secondary">
-                            使用 HTML5、CSS3 和 JavaScript 开发适配所有设备的响应式网页，确保在手机、平板和桌面端都有最佳体验。
+                            提供专业的项目规划和咨询服务，结合行业经验和市场分析，为客户制定可行的项目实施方案。
                         </p>
                     </div>
 
                     <!-- 服务卡片 2 -->
                     <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-6">
                         <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                            <i class="fa-solid fa-mobile-screen-button text-primary text-xl"></i>
+                            <i class="fa-solid fa-gears text-primary text-xl"></i>
                         </div>
-                        <h3 class="text-lg font-semibold mb-3 text-dark">移动端适配优化</h3>
+                        <h3 class="text-lg font-semibold mb-3 text-dark">项目执行落地</h3>
                         <p class="text-secondary">
-                            针对现有网站进行移动端适配优化，提升移动端加载速度和交互体验，符合移动搜索引擎优化标准。
+                            负责项目的全流程执行和落地，严格把控项目进度和质量，确保项目按时按质完成。
                         </p>
                     </div>
 
                     <!-- 服务卡片 3 -->
                     <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-6">
                         <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                            <i class="fa-solid fa-paint-brush text-primary text-xl"></i>
+                            <i class="fa-solid fa-chart-line text-primary text-xl"></i>
                         </div>
-                        <h3 class="text-lg font-semibold mb-3 text-dark">UI/UX 设计</h3>
+                        <h3 class="text-lg font-semibold mb-3 text-dark">效果评估优化</h3>
                         <p class="text-secondary">
-                            结合用户体验设计原则，打造美观、易用的界面设计，提升用户留存率和转化率。
+                            对项目成果进行全面评估，分析效果和不足，提供针对性的优化建议和改进方案。
                         </p>
                     </div>
 
                     <!-- 服务卡片 4 -->
                     <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-6">
                         <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                            <i class="fa-solid fa-rocket text-primary text-xl"></i>
+                            <i class="fa-solid fa-book-open text-primary text-xl"></i>
                         </div>
-                        <h3 class="text-lg font-semibold mb-3 text-dark">性能优化</h3>
+                        <h3 class="text-lg font-semibold mb-3 text-dark">专业培训服务</h3>
                         <p class="text-secondary">
-                            对网页进行全面的性能优化，包括代码压缩、图片优化、懒加载等，提升页面加载速度。
+                            提供定制化的专业培训课程，提升客户团队的专业能力和业务水平，助力长期发展。
                         </p>
                     </div>
 
@@ -214,20 +321,20 @@
                         <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                             <i class="fa-solid fa-shield-halved text-primary text-xl"></i>
                         </div>
-                        <h3 class="text-lg font-semibold mb-3 text-dark">无障碍改造</h3>
+                        <h3 class="text-lg font-semibold mb-3 text-dark">风险管控服务</h3>
                         <p class="text-secondary">
-                            按照 WCAG 标准对网站进行无障碍改造，让残障人士也能顺畅使用网站。
+                            识别项目潜在风险，制定风险应对策略，降低项目执行过程中的各类风险。
                         </p>
                     </div>
 
                     <!-- 服务卡片 6 -->
                     <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-6">
                         <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                            <i class="fa-solid fa-magnifying-glass text-primary text-xl"></i>
+                            <i class="fa-solid fa-headset text-primary text-xl"></i>
                         </div>
-                        <h3 class="text-lg font-semibold mb-3 text-dark">SEO 优化</h3>
+                        <h3 class="text-lg font-semibold mb-3 text-dark">售后支持服务</h3>
                         <p class="text-secondary">
-                            优化网页结构和代码，提升搜索引擎排名，增加网站自然流量。
+                            提供长期的售后技术支持和咨询服务，及时解决客户在使用过程中遇到的各类问题。
                         </p>
                     </div>
                 </div>
@@ -237,9 +344,9 @@
         <!-- 联系我们部分 -->
         <section id="contact" class="py-16 md:py-24 bg-white">
             <div class="content-section">
-                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-2 text-center">联系我们</h2>
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-2 text-center">联系洪加龙组</h2>
                 <p class="text-secondary text-center mb-12 max-w-2xl mx-auto">
-                    如有任何问题或需求，欢迎随时联系我们，我们将尽快回复您
+                    如有任何问题或需求，欢迎随时联系我们，洪加龙组将尽快回复您
                 </p>
 
                 <div class="max-w-2xl mx-auto bg-gray-50 rounded-xl p-6 md:p-8 shadow-sm">
@@ -277,11 +384,11 @@
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
-                        <i class="fa-solid fa-rocket text-primary text-2xl"></i>
-                        <span class="text-xl font-bold">响应式单页</span>
+                        <i class="fa-solid fa-users text-primary text-2xl"></i>
+                        <span class="text-xl font-bold">洪加龙组</span>
                     </div>
                     <p class="text-gray-400 mb-4">
-                        打造极致的响应式网页体验，适配所有设备，提升用户体验。
+                        洪加龙组 - 专业团队，用心服务，为客户创造价值，与客户共同成长。
                     </p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-400 hover:text-primary transition-colors">
@@ -299,18 +406,19 @@
                     <h3 class="text-lg font-semibold mb-4">快速链接</h3>
                     <ul class="space-y-2">
                         <li><a href="#home" class="text-gray-400 hover:text-primary transition-colors">首页</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-primary transition-colors">关于我们</a></li>
-                        <li><a href="#services" class="text-gray-400 hover:text-primary transition-colors">服务</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-primary transition-colors">关于洪加龙组</a></li>
+                        <li><a href="#team" class="text-gray-400 hover:text-primary transition-colors">组员分工</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-primary transition-colors">服务内容</a></li>
                         <li><a href="#contact" class="text-gray-400 hover:text-primary transition-colors">联系我们</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">服务</h3>
+                    <h3 class="text-lg font-semibold mb-4">服务内容</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">响应式网页开发</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">移动端适配优化</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">UI/UX 设计</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">性能优化</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">项目咨询服务</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">项目执行落地</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">效果评估优化</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">专业培训服务</a></li>
                     </ul>
                 </div>
                 <div>
@@ -326,13 +434,13 @@
                         </li>
                         <li class="flex items-center">
                             <i class="fa-solid fa-envelope text-primary mr-3"></i>
-                            <span class="text-gray-400">contact@example.com</span>
+                            <span class="text-gray-400">contact@hongjialong.com</span>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 响应式单页示例. 保留所有权利.</p>
+                <p>&copy; 2025 洪加龙组. 保留所有权利.</p>
             </div>
         </div>
     </footer>
